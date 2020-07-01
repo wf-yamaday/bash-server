@@ -41,5 +41,5 @@ fi
 trap exit INT
 mkfifo stream
 while true; do
-  nc -l -w 1 "$PORT" < stream | awk '/HTTP/ {system("./get_content.sh " $2)}' > stream
+  nc -l "$PORT" -w 1 < stream | awk '/HTTP/ {system("./get_content.sh " $2)}' > stream
 done
