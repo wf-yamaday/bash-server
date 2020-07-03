@@ -9,7 +9,7 @@
 
 ## How to run
 
-### Install Dependence Comman and give execution permission
+### Install Dependences command and give execution permission
 
 ```
 make setup
